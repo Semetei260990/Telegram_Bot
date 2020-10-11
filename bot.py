@@ -6,12 +6,10 @@ from telebot import types
 token = '987047113:AAG1S0FYlCJcqBjWlAoWsZuhTTzsbehJ6iE'
 bot = telebot.TeleBot('987047113:AAG1S0FYlCJcqBjWlAoWsZuhTTzsbehJ6iE')
 
-
 # Пишем @BotFather /mybots, выбираем своего бота, жмём Edit bot, а потом Edit Botpick и всё.
 
 number = 0
 tries = 6
-
 
 @bot.message_handler(content_types=['text'])
 def start(message):
